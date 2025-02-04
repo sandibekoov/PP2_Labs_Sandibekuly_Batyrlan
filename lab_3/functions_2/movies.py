@@ -1,4 +1,3 @@
-# movies_list.py
 
 movies = [
     {"name": "Usual Suspects", "imdb": 7.0, "category": "Thriller"},

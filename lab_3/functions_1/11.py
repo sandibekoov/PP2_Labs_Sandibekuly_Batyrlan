@@ -1,8 +1,8 @@
 def is_palindrome():
     word = input().replace(" ", "").lower()
     if word == word[::-1]:
-        print("Palindrome")
+        print("It's palindrome")
     else:
-        print("Not Palindrome")
+        print("It isn't palindrome")
 
 is_palindrome()
