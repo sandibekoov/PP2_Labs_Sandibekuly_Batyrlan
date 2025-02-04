@@ -7,8 +7,17 @@ def is_prime(n):
     return True
 
 def filter_prime():
-    numbers = list(map(int, input().split()))
-    primes = [num for num in numbers if is_prime(num)]
-    print(primes)
+    numbers_str = input().split()
+    numbers = []
+    
+    for num in numbers_str:
+        numbers.append(int(num))
+    
+    primes = []
+    for num in numbers:
+        if is_prime(num):
+            primes.append(num)
+
+    print("Prime: ", primes)
 
 filter_prime()
