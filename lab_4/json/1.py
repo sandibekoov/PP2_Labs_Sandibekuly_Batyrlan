@@ -10,7 +10,7 @@ print("-" * 90)
 
 for item in data["imdata"]:
     attributes = item["l1PhysIf"]["attributes"]
-    dn = attributes["dn"]
+    dn = attributes.get("dn")
     description = attributes.get("descr")
     speed = attributes.get("speed")
     mtu = attributes.get("mtu")

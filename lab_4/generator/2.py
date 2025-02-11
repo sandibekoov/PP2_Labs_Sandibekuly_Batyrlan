@@ -3,4 +3,9 @@ def even(n):
         yield i
 
 n = int(input())
-print(",".join(str(num) for num in even(n)))
+list=[]
+
+for num in even(n):
+    list.append(num)
+    
+print(list)

@@ -3,5 +3,9 @@ def squares(n):
         yield i ** 2
 
 n = int(input())
-for square in squares(n):
-    print(square, end=" ")
+list = []
+
+for num in squares(n):
+    list.append(num)
+
+print(list)
