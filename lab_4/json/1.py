@@ -1,12 +1,12 @@
 import json
 
-with open("c:/Study/pp2/lab_4/json/sample-data.json", "r") as file:
+with open("c:/Study/pp2/lab_4/json/sample-data.json") as file:
     data = json.load(file)
 
 print("Interface Status")
-print("=" * 80)
-print(f"{'DN':<50} {'Description':<20} {'Speed':<7} {'MTU':<6}")
-print("-" * 80)
+print("=" * 90)
+print(f"{'DN':<50} {'Description':<20} {'Speed':<7} {'MTU'}")
+print("-" * 90)
 
 for item in data["imdata"]:
     attributes = item["l1PhysIf"]["attributes"]
