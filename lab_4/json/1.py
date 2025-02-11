@@ -11,8 +11,8 @@ print("-" * 90)
 for item in data["imdata"]:
     attributes = item["l1PhysIf"]["attributes"]
     dn = attributes["dn"]
-    description = attributes.get("descr", "")
-    speed = attributes.get("speed", "unknown")
-    mtu = attributes.get("mtu", "unknown")
+    description = attributes.get("descr")
+    speed = attributes.get("speed")
+    mtu = attributes.get("mtu")
     
     print(f"{dn:<50} {description:<20} {speed:<7} {mtu:<6}")
