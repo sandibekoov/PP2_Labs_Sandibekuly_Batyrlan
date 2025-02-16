@@ -3,9 +3,9 @@ def countdown(n):
         yield i
 
 n = int(input())
-arr = []
+list = []
 
 for num in countdown(n):
-    arr.append(num)
+    list.append(num)
 
-print(arr)
+print(list)
