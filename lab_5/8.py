@@ -7,4 +7,4 @@ with file_path.open("r", encoding="utf-8") as file:
 
 split_at_uppercase = re.findall(r'[A-Z][^A-Z]*', receipt_data)
 
-print(split_at_uppercase[:10])
+print(split_at_uppercase)

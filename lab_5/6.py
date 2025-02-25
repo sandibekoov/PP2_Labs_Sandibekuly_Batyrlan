@@ -7,4 +7,4 @@ with file_path.open("r", encoding="utf-8") as file:
 
 replaced_chars = re.sub(r'[ ,.]', ':', receipt_data)
 
-print(replaced_chars[:200])
+print(replaced_chars)

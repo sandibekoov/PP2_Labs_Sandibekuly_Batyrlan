@@ -8,4 +8,4 @@ with file_path.open("r", encoding="utf-8") as file:
 split_at_uppercase = re.findall(r'[A-Z][^A-Z]*', receipt_data)
 insert_spaces = ' '.join(split_at_uppercase)
 
-print(insert_spaces[:200])
+print(insert_spaces)
