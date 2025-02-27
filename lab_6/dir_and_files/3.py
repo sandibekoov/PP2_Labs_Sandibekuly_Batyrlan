@@ -8,6 +8,5 @@ def check_path(path):
     else:
         print("Path does not exist")
 
-# Проверяем путь
 path_to_test = "c:/Study/pp2/lab_5/raw.txt"
 check_path(path_to_test)
