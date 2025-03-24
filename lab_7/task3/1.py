@@ -17,7 +17,7 @@ while running:
             running = False
 
     keys = pygame.key.get_pressed()
-    if keys[pygame.D] and pos[0] + radius + speed <= 800:
+    if keys[pygame.K_RIGHT] and pos[0] + radius + speed <= 800:
         pos[0] += speed
     if keys[pygame.K_LEFT] and pos[0] - radius - speed >= 0:
         pos[0] -= speed
