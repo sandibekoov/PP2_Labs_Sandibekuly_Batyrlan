@@ -45,7 +45,7 @@ while True:
                 pygame.draw.circle(screen, WHITE, event.pos, radius)
 
         elif event.type == pygame.MOUSEMOTION:
-            if pygame.mouse.get_pressed()[0]:  # left button held
+            if pygame.mouse.get_pressed()[0]:
                 if mode == 'brush':
                     pygame.draw.circle(screen, color, event.pos, radius)
                 elif mode == 'eraser':
