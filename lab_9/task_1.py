@@ -22,8 +22,8 @@ SPEED = 5
 SCORE = 0
 COINS = 0
 N_COINS_FOR_SPEED = 5  
-font = pygame.font.SysFont("Verdana", 60)
-font_small = pygame.font.SysFont("Verdana", 20)
+font = pygame.font.SysFont("Montserrat", 60)
+font_small = pygame.font.SysFont("Montserrat", 20)
 game_over = font.render("Game Over", True, BLACK)
 
 # Загрузка ресурсов

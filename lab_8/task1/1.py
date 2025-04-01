@@ -16,7 +16,7 @@ MUSIC_PATH = os.path.join(BASE_PATH, "sounds")
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
 DISPLAYSURF = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Racer with Coins")
+pygame.display.set_caption("Racer")
 
 # Clock and FPS
 FPS = 60
@@ -33,8 +33,8 @@ SCORE = 0
 COINS = 0
 
 # Fonts
-font = pygame.font.SysFont("Verdana", 60)
-font_small = pygame.font.SysFont("Verdana", 20)
+font = pygame.font.SysFont("Montserrat", 60)
+font_small = pygame.font.SysFont("Montserrat", 20)
 game_over = font.render("Game Over", True, BLACK)
 
 # Load resources
