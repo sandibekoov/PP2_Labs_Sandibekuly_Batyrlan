@@ -17,13 +17,13 @@ while running:
             running = False
 
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_RIGHT] and pos[0] + radius + speed <= 800:
+    if keys[pygame.K_d] and pos[0] + radius + speed <= 800:
         pos[0] += speed
-    if keys[pygame.K_LEFT] and pos[0] - radius - speed >= 0:
+    if keys[pygame.K_a] and pos[0] - radius - speed >= 0:
         pos[0] -= speed
-    if keys[pygame.K_DOWN] and pos[1] + radius + speed <= 600:
+    if keys[pygame.K_s] and pos[1] + radius + speed <= 600:
         pos[1] += speed
-    if keys[pygame.K_UP] and pos[1] - radius - speed >= 0:
+    if keys[pygame.K_w] and pos[1] - radius - speed >= 0:
         pos[1] -= speed
 
     display.fill(white)
