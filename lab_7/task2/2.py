@@ -4,7 +4,7 @@ import os
 pygame.init()
 pygame.mixer.init()
 
-BASE_PATH = r"C:\Study\pp2\lab 7\task2"
+BASE_PATH = r"C:\Study\pp2\lab_7\task2"
 MUSIC_PATH = os.path.join(BASE_PATH, "music")
 BUTTONS_PATH = os.path.join(BASE_PATH, "buttons")
 

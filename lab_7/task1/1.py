@@ -8,7 +8,7 @@ display = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Mickey Clock")
 clock = pygame.time.Clock()
 
-base_path = r"C:\Study\pp2\lab 7\task1"
+base_path = r"C:\Study\pp2\lab_7\task1"
 image_miki = pygame.image.load(os.path.join(base_path, "clock.png"))
 image_min = pygame.image.load(os.path.join(base_path, "min_hand.png"))
 image_sec = pygame.image.load(os.path.join(base_path, "sec_hand.png"))
