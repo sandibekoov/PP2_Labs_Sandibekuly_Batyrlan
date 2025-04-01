@@ -14,7 +14,6 @@ tracks = [
     os.path.join(MUSIC_PATH, "Intro.mp3")
 ]
 
-
 current = 0
 
 if os.path.exists(tracks[current]):
@@ -26,14 +25,11 @@ pygame.display.set_caption("GTA Songs")
 
 def load_image(filename):
     path = os.path.join(BUTTONS_PATH, filename)
-    return pygame.image.load(path) if os.path.exists(path) else pygame.Surface((50, 50), pygame.SRCALPHA)
+    return pygame.image.load(path)
 
 background_path = os.path.join(BASE_PATH, "gtasa.png")
-if os.path.exists(background_path):
-    background = pygame.image.load(background_path)
-    background = pygame.transform.scale(background, (1280, 720))
-else:
-    background = pygame.Surface((1280, 720))
+background = pygame.image.load(background_path)
+background = pygame.transform.scale(background, (1280, 720))
 
 image_back = load_image("back 1.png")
 image_next = load_image("back 2.png")
