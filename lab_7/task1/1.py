@@ -5,7 +5,7 @@ import os
 pygame.init()
 
 display = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Крыса Микки")
+pygame.display.set_caption("Mickey Clock")
 clock = pygame.time.Clock()
 
 base_path = r"C:\Study\pp2\lab 7\task1"
