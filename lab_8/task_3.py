@@ -22,7 +22,7 @@ while True:
 
         # keyboard controls
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_b:
+            if event.key == pygame.K_p:
                 mode = 'brush'
             elif event.key == pygame.K_e:
                 mode = 'eraser'
