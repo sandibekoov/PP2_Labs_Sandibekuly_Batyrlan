@@ -18,4 +18,4 @@ def get_people(category, search):
         print(error)
 
 if __name__ == '__main__':
-    get_people("name", "Tamir")        
+    get_people("name", "Batyr")        

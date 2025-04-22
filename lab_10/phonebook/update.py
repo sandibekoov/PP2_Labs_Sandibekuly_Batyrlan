@@ -25,4 +25,4 @@ def update_person(person_id, change, text):
         return updated_row_count
 
 if __name__ == '__main__':
-    update_person(1, "name", "Tamir")
+    update_person(1, "name", "Batyr")
