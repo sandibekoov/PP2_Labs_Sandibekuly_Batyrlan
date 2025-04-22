@@ -3,7 +3,6 @@ from config import load_config
 
 def create_table():
     config = load_config()
-    print(config)
     command = """CREATE TABLE phone_book(
                     person_id SERIAL PRIMARY KEY,
                     name VARCHAR(30) NOT NULL,

@@ -20,4 +20,4 @@ def get_player_data(name):
 
 
 if __name__ == "__main__":
-    get_player_data("mkhmtcore")
+    get_player_data("Batyrlan")

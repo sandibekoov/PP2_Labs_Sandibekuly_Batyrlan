@@ -1,6 +1,3 @@
-# ✅ Основной файл: snake_db.py (обновлённый)
-# Теперь ввод имени происходит прямо в игре с графическим интерфейсом (а не в терминале)
-
 import pygame, sys, random, time
 import psycopg2
 from config import load_config
@@ -27,7 +24,7 @@ BLACK = (0, 0, 0)
 font = pygame.font.SysFont("Montserrat", 20)
 game_over_font = pygame.font.SysFont("Montserrat", 50)
 
-# Графический ввод имени
+#ввод имени
 clock = pygame.time.Clock()
 def get_player_name():
     name = ""
@@ -68,6 +65,7 @@ direction = 'RIGHT'
 score = 0
 level = 1
 speed = 10
+paused = False
 
 # Генерация еды
 def generate_food():
@@ -92,9 +90,18 @@ while running:
             running = False
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_p:
-                if get_player_data(player):
-                    update_person(player, level, score, speed)
-                    print("Игра сохранена.")
+                paused = not paused
+                if paused:
+                    if get_player_data(player):
+                        update_person(player, level, score, speed)
+                        print("Игра поставлена на паузу и сохранена. Нажмите P, чтобы продолжить.")
+
+    if paused:
+        pause_text = game_over_font.render("PAUSE", True, BLACK)
+        screen.blit(pause_text, (WIDTH // 2 - 100, HEIGHT // 2 - 30))
+        pygame.display.flip()
+        clock.tick(5)
+        continue
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w] and direction != 'DOWN':
@@ -144,7 +151,7 @@ while running:
     for block in snake:
         pygame.draw.rect(screen, GREEN, (block[0], block[1], BLOCK_SIZE, BLOCK_SIZE))
 
-    score_text = font.render(f"Score: {score}   Level: {level}", True, BLACK)
+    score_text = font.render(f"Score: {score}   Level: {level}   [P] Pause", True, BLACK)
     screen.blit(score_text, (10, 10))
 
     pygame.display.flip()
